@@ -1,1 +1,0 @@
-/Users/vectoredge/Desktop/work/DockerMachine/projects/Rust-Project/rust-tutorial/target/debug/rust-tutorial: /Users/vectoredge/Desktop/work/DockerMachine/projects/Rust-Project/rust-tutorial/src/main.rs
