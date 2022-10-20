@@ -1,0 +1,11 @@
+/media/tarun/6E08957D089544CD/Github/Rust-Project/guess_game2/target/debug/deps/getrandom-fc8d74b9f36ca470.rmeta: /home/tarun/.cargo/registry/src/github.com-1ecc6299db9ec823/getrandom-0.2.7/src/lib.rs /home/tarun/.cargo/registry/src/github.com-1ecc6299db9ec823/getrandom-0.2.7/src/error.rs /home/tarun/.cargo/registry/src/github.com-1ecc6299db9ec823/getrandom-0.2.7/src/util.rs /home/tarun/.cargo/registry/src/github.com-1ecc6299db9ec823/getrandom-0.2.7/src/error_impls.rs /home/tarun/.cargo/registry/src/github.com-1ecc6299db9ec823/getrandom-0.2.7/src/util_libc.rs /home/tarun/.cargo/registry/src/github.com-1ecc6299db9ec823/getrandom-0.2.7/src/use_file.rs /home/tarun/.cargo/registry/src/github.com-1ecc6299db9ec823/getrandom-0.2.7/src/linux_android.rs
+
+/media/tarun/6E08957D089544CD/Github/Rust-Project/guess_game2/target/debug/deps/getrandom-fc8d74b9f36ca470.d: /home/tarun/.cargo/registry/src/github.com-1ecc6299db9ec823/getrandom-0.2.7/src/lib.rs /home/tarun/.cargo/registry/src/github.com-1ecc6299db9ec823/getrandom-0.2.7/src/error.rs /home/tarun/.cargo/registry/src/github.com-1ecc6299db9ec823/getrandom-0.2.7/src/util.rs /home/tarun/.cargo/registry/src/github.com-1ecc6299db9ec823/getrandom-0.2.7/src/error_impls.rs /home/tarun/.cargo/registry/src/github.com-1ecc6299db9ec823/getrandom-0.2.7/src/util_libc.rs /home/tarun/.cargo/registry/src/github.com-1ecc6299db9ec823/getrandom-0.2.7/src/use_file.rs /home/tarun/.cargo/registry/src/github.com-1ecc6299db9ec823/getrandom-0.2.7/src/linux_android.rs
+
+/home/tarun/.cargo/registry/src/github.com-1ecc6299db9ec823/getrandom-0.2.7/src/lib.rs:
+/home/tarun/.cargo/registry/src/github.com-1ecc6299db9ec823/getrandom-0.2.7/src/error.rs:
+/home/tarun/.cargo/registry/src/github.com-1ecc6299db9ec823/getrandom-0.2.7/src/util.rs:
+/home/tarun/.cargo/registry/src/github.com-1ecc6299db9ec823/getrandom-0.2.7/src/error_impls.rs:
+/home/tarun/.cargo/registry/src/github.com-1ecc6299db9ec823/getrandom-0.2.7/src/util_libc.rs:
+/home/tarun/.cargo/registry/src/github.com-1ecc6299db9ec823/getrandom-0.2.7/src/use_file.rs:
+/home/tarun/.cargo/registry/src/github.com-1ecc6299db9ec823/getrandom-0.2.7/src/linux_android.rs:
