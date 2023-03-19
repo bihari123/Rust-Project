@@ -395,3 +395,58 @@ for num in 0..=50 { // start is 0 which is included, end is 50 which is included
   }
 
 ```
+
+## String
+
+There are six types of strings in the rust library but we only care about the two which overlap with each other. The first is called a string slice **str**, which we mostly see in the form of a borrowed string slice **_&str_**.
+The literal string is always a borrowed string slice. We will talk about borrowing later.
+The other string type is a **String** with a capital S.
+The differece between the two is that the data in the borrowed string **&str** type can't be modified while the data in the **String** can be modified.
+
+You will often create a string by calling the **to_string()** method on the borrowed string slice (**&str**).
+
+```
+let msg = "abc".to_string();
+```
+
+or by passing a borrowed string slice to **String::from**. A borrowed string slice is internally made up of a pointer to
+
+A borrowed string slice looks like the following:
+
+```
+&str
+ptr -> [a,b] // pointer to some bytes
+len =2
+```
+
+Where as the **String** is made of a pointer , length and a capacity that may be greater than the length. In short, a borrowed string **&str** is a subset of the **String** which is why they share a bunch of characteristics.
+
+Strings can not be indexed by character position. Because english is not the only language in the world. You see, you can index english characters take one byte however characters in different languages take more than one byte. Thai for example take three bytes. So it gets complicated. In languages like hindi or thai, various unicode utf8 bytes combine to make a grapheme (word having "maatra") and it is the grapheme that we care about.
+
+If you really wnat to index, you can use bytes method as follows:
+
+```
+words.bytes();
+words.chars(); //gives you the iterator
+```
+
+At the end, you can use unicode-segmentation package that has various methods to deal with graphemes
+
+## Ownership
+
+Rust ownership model is the reason why people like to chose rust in system programming. Ownership is what makes those crazy safety guarantee possible and makes Rust different from others.
+There are 3 rules to ownership:
+
+- Each value has an owner.: Each data has a variable that owns it.
+- There is only one owner of the value. Now two variables share the ownership, other variables may borrow the value.
+- When the owner get out of scope the value get dropped
+
+let's consider the following code:
+
+```
+let s1= Strings::from("abc");
+let s2=s1;
+println!("{}",s1) // Error!
+```
+
+The moment you do s2=s1, the ownership of the value "abc" is transferred from s1 to s2. After that the compiler considers s1 as uninitialized and won't let you use it.
