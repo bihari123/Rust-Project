@@ -1,0 +1,24 @@
+[package]
+name = "mytls"
+version = "0.1.0"
+edition = "2021"
+
+# See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
+
+#
+# [features]
+# default = ["tokio-net"]
+# rustls = ["tokio-rustls"]
+# native-tls = ["tokio-native-tls"]
+# openssl = ["tokio-openssl", "openssl_impl"]
+# rt = ["tokio/rt"]
+#
+# tokio-net = ["tokio/net"]
+# hyper-h1 = ["hyper", "hyper/http1"]
+# hyper-h2 = ["hyper", "hyper/http2"]
+
+[dependencies]
+axum = "0.6.20"
+axum-server = {version = "0.5.1", features = ["tls-rustls"]}
+tokio = {version = "1.32.0", default-features = false, features = ["full"]}
+
